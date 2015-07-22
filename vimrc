@@ -2,23 +2,23 @@ set nocompatible
 filetype off
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
+set rtp+=~/.vim/bundle/vundle
+call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/vundle'
 
-Bundle 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim.git'
-Bundle 'CaptPhunkosis/scala-vundle'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
-Plugin 'klen/python-mode'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'evidens/vim-twig.git'
-Plugin 'fatih/vim-go'
 
+Plugin 'klen/python-mode'
+Plugin 'CaptPhunkosis/scala-vundle'
+Plugin 'fatih/vim-go'
+Plugin 'ekalinin/Dockerfile.vim'
+
+call vundle#end()
 
 set expandtab
 set tabstop=4
@@ -26,7 +26,6 @@ set softtabstop=4
 set shiftwidth=4
 set smarttab
 set number
-
 set nopaste
 set ruler
 set ignorecase
@@ -34,24 +33,28 @@ set smartcase
 set showcmd
 set ai
 set scrolloff=6
-"set textwidth=110
 set hlsearch
 set backspace=indent,eol,start
 
+autocmd FileType ruby setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
 filetype plugin indent on
 
-" ctrlp options
-let g:ctrlp_user_command = 'find %s -type f'
-let g:ctrlp_clear_cache_on_exit = 0
+" Remove trailing whitespace.
+autocmd BufWritePre * :%s/\s\+$//e
 
-
-" VISUALS
+" Visuals
 syntax on
 set background=dark
 set t_Co=256
 colorscheme etsy
 
 set laststatus=2
+
+
+" ctrlp options
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 
 " AIRLINE
@@ -109,8 +112,6 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 
 
-" Remove trailing whitespace.
-" autocmd BufWritePre * :%s/\s\+$//e
 
 
 if has("autocmd")

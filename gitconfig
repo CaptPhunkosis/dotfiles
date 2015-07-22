@@ -1,9 +1,9 @@
 [user]
-    	name = captphunkosis
+    name = captphunkosis
 	email = nickthuesen@gmail.com
 [github]
 	user = captphunkosis
-    	email = nickthuesen@gmail.com
+	email = nickthuesen@gmail.com
 [alias]
 	co = checkout
 	br = branch

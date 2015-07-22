@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/nick/gh/hubspot-ruby'
+let g:netrw_dirhist_2='/Users/nick/gh/hubspot-ruby/lib'
+let g:netrw_dirhist_3='/Users/nick/jw/dataware/import_scripts'
+let g:netrw_dirhist_4='/Users/nick/jw/dhaus_reporting/reports/ioates_misc'
+let g:netrw_dirhist_5='/Users/nick/Downloads/TumblrBU/bots/slackard/deploybot_plugins'
