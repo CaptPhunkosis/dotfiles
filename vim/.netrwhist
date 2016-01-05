@@ -1,8 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/nick/gh/hubspot-ruby'
-let g:netrw_dirhist_2='/Users/nick/gh/hubspot-ruby/lib'
-let g:netrw_dirhist_3='/Users/nick/jw/dataware/import_scripts'
-let g:netrw_dirhist_4='/Users/nick/jw/dhaus_reporting/reports/ioates_misc'
-let g:netrw_dirhist_5='/Users/nick/Downloads/TumblrBU/bots/slackard/deploybot_plugins'
-let g:netrw_dirhist_6='/Users/nick/.vim'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/nick/jw/devtools/Docker/clockwork'
+let g:netrw_dirhist_2='/home/nick/jw/devtools/Docker/clockwork/DockerHelpers'
+let g:netrw_dirhist_3='/home/nick/jw/clockwork_web/config/deploy'

@@ -1,6 +1,6 @@
 #Locs
 alias jw="cd ~/jw"
-alias cw="cd ~/jw/clockwork"
+alias cw="cd ~/jw/clockwork_web"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
