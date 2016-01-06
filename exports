@@ -26,6 +26,6 @@ export GREP_OPTIONS="--color=auto"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 #Vagrant Boot2Docker
-export DOCKER_HOST=tcp://127.0.0.1:2376
-export DOCKER_CERT_PATH=/Users/nick/jw/tls/
-export DOCKER_TLS_VERIFY=1
+#export DOCKER_HOST=tcp://127.0.0.1:2376
+#export DOCKER_CERT_PATH=/Users/nick/jw/tls/
+#export DOCKER_TLS_VERIFY=1

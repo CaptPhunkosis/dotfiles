@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/nick/jw/clockwork/app/views/sessions'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/nick/jw/devtools/Docker/clockwork'
+let g:netrw_dirhist_2='/home/nick/jw/devtools/Docker/clockwork/DockerHelpers'
+let g:netrw_dirhist_3='/home/nick/jw/clockwork_web/config/deploy'
