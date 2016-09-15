@@ -17,6 +17,8 @@ Plugin 'klen/python-mode'
 Plugin 'CaptPhunkosis/scala-vundle'
 Plugin 'fatih/vim-go'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'diepm/vim-rest-console'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()
 
