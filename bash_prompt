@@ -57,5 +57,5 @@ function parse_git_branch() {
 	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-export PS1="\[${BOLD}${RED}\]\u \[$WHITE\]at \[$ORANGE\]$(scutil --get ComputerName) \[$WHITE\]in \[$LIME\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$BLUE\]\$(parse_git_branch)\[$WHITE\]\n🚀  \[$RESET\]"
-export PS2="\[$ORANGE\]→ \[$RESET\]"
+export PS1="\[${BOLD}${BLUE}\]\u \[$WHITE\]at \[$LIME\]$(hostname) \[$WHITE\]in \[$ORANGE\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$RED\]\$(parse_git_branch)\[$WHITE\]\n🍜  \[$RESET\]"
+export PS2="\[$GREEN\]→ \[$RESET\]"
