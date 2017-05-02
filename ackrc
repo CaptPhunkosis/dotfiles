@@ -4,3 +4,5 @@
 --ignore-dir=log/
 --ignore-dir=app/assets
 --ignore-dir=public
+--ignore-dir=public/assets
+--ignore-dir=coverage/
