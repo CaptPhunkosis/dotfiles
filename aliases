@@ -1,4 +1,4 @@
-alias go="ssh nick@dev-nick-102"
+alias gogo="ssh nick@dev-nick-104"
 
 #Locs
 alias jw="cd ~/jw"
