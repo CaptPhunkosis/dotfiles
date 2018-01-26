@@ -12,13 +12,17 @@ if tput setaf 1 &> /dev/null; then
 	tput sgr0
 	if [[ $(tput colors) -ge 256 ]] 2>/dev/null; then
 		MAGENTA=$(tput setaf 1)
-		ORANGE=$(tput setaf 214)
+		#ORANGE=$(tput setaf 214)
+		LIME=$(tput setaf 214)
 		GREEN=$(tput setaf 34)
-        LIME=$(tput setaf 190)
+        #LIME=$(tput setaf 190)
+        ORANGE=$(tput setaf 190)
 		PURPLE=$(tput setaf 141)
 		WHITE=$(tput setaf 247)
-        BLUE=$(tput setaf 39)
-        RED=$(tput setaf 160)
+        #BLUE=$(tput setaf 39)
+        RED=$(tput setaf 39)
+        #RED=$(tput setaf 160)
+        BLUE=$(tput setaf 160)
 	else
 		MAGENTA=$(tput setaf 5)
 		ORANGE=$(tput setaf 4)
@@ -50,12 +54,12 @@ export LIME
 export RED
 
 function parse_git_dirty() {
-	[[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
+	[[ $(git status 2> /dev/null | tail -n1) != *"nothing to commit, working tree clean"* ]] && echo "*"
 }
 
 function parse_git_branch() {
 	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-export PS1="\[${BOLD}${BLUE}\]\u \[$WHITE\]at \[$LIME\]$(hostname) \[$WHITE\]in \[$ORANGE\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$RED\]\$(parse_git_branch)\[$WHITE\]\n🍜  \[$RESET\]"
+export PS1="\[${BOLD}${BLUE}\]\u \[$WHITE\]at \[$LIME\]$(scutil --get ComputerName) \[$WHITE\]in \[$ORANGE\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$RED\]\$(parse_git_branch)\[$WHITE\]\n🍜  \[$RESET\]"
 export PS2="\[$GREEN\]→ \[$RESET\]"
