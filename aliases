@@ -1,7 +1,7 @@
 alias gogo="ssh nick@dev-nick-104"
 
 #Locs
-alias cv="cd ~/cove/Cove"
+alias cv="cd ~/cove/Cove; source ./bin/activate; cd cove;"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
