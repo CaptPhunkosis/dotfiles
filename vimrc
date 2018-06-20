@@ -13,11 +13,12 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
 
-Plugin 'klen/python-mode'
 Plugin 'CaptPhunkosis/scala-vundle'
-Plugin 'fatih/vim-go'
-Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'chase/vim-ansible-yaml'
 Plugin 'diepm/vim-rest-console'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'fatih/vim-go'
+Plugin 'klen/python-mode'
 Plugin 'mileszs/ack.vim'
 
 call vundle#end()
@@ -111,6 +112,12 @@ let g:pymode_syntax = 1
 let g:pymode_syntax_all = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
+
+
+" ansible options
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+let g:ansible_options = {'ignore_blank_lines': 0}
+
 
 
 
