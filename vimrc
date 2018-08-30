@@ -8,17 +8,19 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/vundle'
 
-Plugin 'kien/ctrlp.vim.git'
-Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'kien/ctrlp.vim.git'
+Plugin 'tpope/vim-fugitive'
 
-Plugin 'klen/python-mode'
 Plugin 'CaptPhunkosis/scala-vundle'
-Plugin 'fatih/vim-go'
-Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'diepm/vim-rest-console'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'fatih/vim-go'
+Plugin 'klen/python-mode'
 Plugin 'mileszs/ack.vim'
+Plugin 'pearofducks/ansible-vim'
+
 
 call vundle#end()
 
@@ -111,6 +113,16 @@ let g:pymode_syntax = 1
 let g:pymode_syntax_all = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
+
+
+" pearofducks/ansible-vim
+let g:ansible_unindent_after_newline = 1
+let g:ansible_attribute_highlight = "ob"
+" let g:ansible_name_highlight = 'b'
+let g:ansible_extra_keywords_highlight = 1
+" let g:ansible_normal_keywords_highlight = 'Identifier'
+" let g:ansible_with_keywords_highlight = 'Constant'
+
 
 
 

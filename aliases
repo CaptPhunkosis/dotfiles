@@ -2,6 +2,11 @@ alias gogo="ssh nick@dev-nick-104"
 
 #Locs
 alias cv="cd ~/cove/Cove; source ./bin/activate; cd cove;"
+alias an="cd ~/cove/almaansible; source ./env/bin/activate;"
+
+
+alias rs="cd ~/cove/Cove; source ./bin/activate; cd cove; ./manage.py runserver"
+alias ns="cd ~/cove/Cove; source ./bin/activate; cd cove/website/client; npm start"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -20,7 +25,7 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
-alias rmswp="find ./ -type f -name \"\\.*sw[klmnop]\""
+alias rmswp="find ./ -type f -name \"\\.*sw[klmnop]\" | xargs rm"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
