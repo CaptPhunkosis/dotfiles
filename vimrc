@@ -14,6 +14,7 @@ Plugin 'kien/ctrlp.vim.git'
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'CaptPhunkosis/scala-vundle'
+Plugin 'chase/vim-ansible-yaml'
 Plugin 'diepm/vim-rest-console'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'fatih/vim-go'
@@ -122,6 +123,10 @@ let g:ansible_attribute_highlight = "ob"
 let g:ansible_extra_keywords_highlight = 1
 " let g:ansible_normal_keywords_highlight = 'Identifier'
 " let g:ansible_with_keywords_highlight = 'Constant'
+
+" ansible options
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+let g:ansible_options = {'ignore_blank_lines': 0}
 
 
 
