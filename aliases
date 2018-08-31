@@ -2,7 +2,7 @@ alias gogo="ssh nick@dev-nick-104"
 
 #Locs
 alias cv="cd ~/cove/Cove; source ./bin/activate; cd cove;"
-alias an="cd ~/cove/almaansible; source ./env/bin/activate;"
+alias an="cd ~/cove/almaansible; source ./bin/activate;"
 
 
 alias rs="cd ~/cove/Cove; source ./bin/activate; cd cove; ./manage.py runserver"
