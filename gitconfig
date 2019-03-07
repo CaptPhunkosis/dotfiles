@@ -8,8 +8,11 @@
 	co = checkout
     br = branch
     nb = checkout -b
-    nuke = !sh -c 'git branch -D $1 && git push origin :$1' -
     pruneme = !sh -c 'git branch --merged | egrep \"(^  nick_)\" | xargs git nuke' -
+    nuke = "!f() { \
+        git push origin --delete "$@"; \
+        git branch -d "$@"; \
+    }; f"
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
     l = log --pretty=oneline -n 20 --graph --abbrev-commit
