@@ -4,5 +4,6 @@
 .netrwhist
 *.swp
 *.swo
+almaaliases
 
 /vim/bundle

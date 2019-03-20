@@ -1,10 +1,5 @@
-alias gogo="ssh nick@dev-nick-104"
-
-#Locs
-alias asrc="cd ~/cove/Cove; source ./bin/activate; cd cove;"
-alias ashell="cd ~/cove/Cove; source ./bin/activate; cd cove; ./manage.py shell"
-alias an="cd ~/cove/almaansible; source ./bin/activate;"
-
+#work
+source ~/.almaaliases
 
 alias rs="cd ~/cove/Cove; source ./bin/activate; cd cove; ./manage.py runserver"
 alias ns="cd ~/cove/Cove; source ./bin/activate; cd cove/website/client; npm start"
